@@ -58,7 +58,7 @@ class jl_unresolved_posts_cat_widget extends WP_Widget {
 
 			$jl_urgent_term = term_exists('Urgent', 'post_tag');
 			if ($jl_urgent_term !== 0 && $jl_urgent_term !== null) {
-				echo '<a style="display:block; background-color: rgb(230, 0, 10); color: #fff; border-radius: 5px; padding: 10px; margin-top: 10px" href="' . home_url( '/projects/tag/urgent/?resolved=unresolved' ) . '">Urgent Projects</a>';
+				echo '<a style="display:block; background-color: rgb(230, 0, 10); color: #fff; border-radius: 5px; padding: 10px; margin-top: 10px" href="' . home_url( '/tag/urgent/?resolved=unresolved' ) . '">Urgent Projects</a>';
 			}
 			
 		}
